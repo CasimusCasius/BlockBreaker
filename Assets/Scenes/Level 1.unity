@@ -366,6 +366,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Play Again Button
       objectReference: {fileID: 0}
+    - target: {fileID: 6812567184816148792, guid: 05e52cf0c60753a44b6d6c549f345655,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6812567184816148793, guid: 05e52cf0c60753a44b6d6c549f345655,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -544,6 +549,7 @@ GameObject:
   - component: {fileID: 667432166}
   - component: {fileID: 667432165}
   - component: {fileID: 667432167}
+  - component: {fileID: 667432168}
   m_Layer: 0
   m_Name: Paddle
   m_TagString: Untagged
@@ -609,7 +615,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 667432164}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.23, y: 0.36, z: 0}
+  m_LocalPosition: {x: 8, y: 0.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -646,6 +652,19 @@ PolygonCollider2D:
       - {x: -1, y: -0.25}
       - {x: 1, y: -0.25}
       - {x: 0.9999995, y: 0.04257214}
+--- !u!114 &667432168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667432164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05e737b1e14ad7049a39d539a8c47e7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  screenWidthInUnits: 16
 --- !u!1 &802349146
 GameObject:
   m_ObjectHideFlags: 0
@@ -834,7 +853,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1724913847
 BoxCollider2D:
   m_ObjectHideFlags: 0

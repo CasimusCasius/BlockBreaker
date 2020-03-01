@@ -97,7 +97,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destroySFX: {fileID: 8300000, guid: 9829e42ffaff72e40b8e10f289442f51, type: 3}
   blockSparklesVFX: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
-  maxHits: 1
+  maxHits: 4
+  blockSprites:
+  - {fileID: 21300000, guid: d5d98be48b7a71044bc6d5e1a925933f, type: 3}
+  - {fileID: 21300000, guid: 0010e8851b3eae24e949a49c047690a6, type: 3}
+  - {fileID: 21300000, guid: b8ee69171cc4c96498d689a271667de6, type: 3}
   timesHit: 0
 --- !u!61 &1537446741982529764
 BoxCollider2D:

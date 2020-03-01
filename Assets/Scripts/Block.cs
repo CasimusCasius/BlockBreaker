@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class Block : MonoBehaviour
 {
@@ -7,6 +8,8 @@ public class Block : MonoBehaviour
     [SerializeField] AudioClip destroySFX;
     [SerializeField] GameObject blockSparklesVFX;
     [SerializeField] int maxHits;
+    [SerializeField] Sprite[] blockSprites;
+
     //Cashed reference
     Level level;
 
@@ -34,6 +37,16 @@ public class Block : MonoBehaviour
         {
             DestroyBlock();
         }
+        else
+        {
+            ShowNextHitSprites();
+        }
+    }
+
+    private void ShowNextHitSprites()
+    {
+        int spriteIndex = (timesHit * blockSprites.Length)/maxHits; // TODO check this 
+        GetComponent<SpriteRenderer>().sprite = blockSprites[spriteIndex];
     }
 
     private void CountBreakableBlocks()

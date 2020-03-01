@@ -6,6 +6,7 @@ using TMPro;
 public class Block : MonoBehaviour
 {
     [SerializeField] AudioClip destroySFX;
+    [SerializeField] GameObject blockSparklesVFX;
    
     //cashed reference
     Level level;
@@ -23,10 +24,18 @@ public class Block : MonoBehaviour
 
     private void DestroyBlock()
     {
+        TriggerSparcleVFX();
         AudioSource.PlayClipAtPoint(destroySFX, Camera.main.transform.position);
         gameStatus.AddToScore();
         
         level.BlockDestroy();
+
         Destroy(gameObject);
+    }
+
+    private void TriggerSparcleVFX()
+    {
+        GameObject sparkles = Instantiate(blockSparklesVFX, transform.position, transform.rotation);
+        Destroy(sparkles, 2f);
     }
 }

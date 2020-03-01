@@ -6,6 +6,7 @@ public class GameSession : MonoBehaviour
     [SerializeField] int pointsPerBlockDostroyed = 50;
     [Range(0.1f, 10f)] [SerializeField] float gameSpeed = 1f;
     [SerializeField] TextMeshProUGUI scoreText;
+    [SerializeField] bool isAutoplayEnabled = false;
 
     [SerializeField] int currentScore = 0;
 
@@ -48,5 +49,10 @@ public class GameSession : MonoBehaviour
     {
         currentScore += pointsPerBlockDostroyed;
         DisplayScore();
+    }
+
+    public bool IsAutoplayEnabled()
+    {
+        return isAutoplayEnabled;
     }
 }

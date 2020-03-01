@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Level : MonoBehaviour
 {
@@ -14,15 +12,16 @@ public class Level : MonoBehaviour
     {
         sceneLoader = FindObjectOfType<SceneLoader>();
     }
-    public void CountBreakableBlocks()
+    public void CountBlocks()
     {
+
         breakableBlocks++;
     }
 
     public void BlockDestroy()
     {
         breakableBlocks--;
-        if (breakableBlocks<=0)
+        if (breakableBlocks <= 0)
         {
             sceneLoader.LoadNextScene();
         }

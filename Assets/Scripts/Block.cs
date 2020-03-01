@@ -1,36 +1,42 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using TMPro;
+﻿using UnityEngine;
 
 public class Block : MonoBehaviour
 {
     [SerializeField] AudioClip destroySFX;
     [SerializeField] GameObject blockSparklesVFX;
-   
+
     //cashed reference
     Level level;
     GameSession gameStatus;
-        private void Start()
+    private void Start()
+    {
+        CountBreakableBlocks();
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (tag == "Breakable") DestroyBlock();
+    }
+
+    private void CountBreakableBlocks()
     {
         level = FindObjectOfType<Level>();
         gameStatus = FindObjectOfType<GameSession>();
-        level.CountBreakableBlocks();
-    }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        DestroyBlock();
+        if (tag == "Breakable") level.CountBlocks();
     }
 
     private void DestroyBlock()
     {
         TriggerSparcleVFX();
-        AudioSource.PlayClipAtPoint(destroySFX, Camera.main.transform.position);
+        PlayDestroySFX();
         gameStatus.AddToScore();
-        
         level.BlockDestroy();
-
         Destroy(gameObject);
+    }
+
+    private void PlayDestroySFX()
+    {
+        AudioSource.PlayClipAtPoint(destroySFX, Camera.main.transform.position);
     }
 
     private void TriggerSparcleVFX()

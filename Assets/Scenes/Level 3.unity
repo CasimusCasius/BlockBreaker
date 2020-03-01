@@ -656,6 +656,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1193393793}
     m_Modifications:
+    - target: {fileID: 1537446741982529765, guid: 42d8dda72859618499b9571205c7a06f,
+        type: 3}
+      propertyPath: maxHits
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1537446741982529766, guid: 42d8dda72859618499b9571205c7a06f,
         type: 3}
       propertyPath: m_Color.g
@@ -735,6 +740,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1193393793}
     m_Modifications:
+    - target: {fileID: 1537446741982529765, guid: 42d8dda72859618499b9571205c7a06f,
+        type: 3}
+      propertyPath: maxHits
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1537446741982529766, guid: 42d8dda72859618499b9571205c7a06f,
         type: 3}
       propertyPath: m_Color.g
@@ -1035,6 +1045,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1193393793}
     m_Modifications:
+    - target: {fileID: 1537446741982529765, guid: 42d8dda72859618499b9571205c7a06f,
+        type: 3}
+      propertyPath: maxHits
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1537446741982529766, guid: 42d8dda72859618499b9571205c7a06f,
         type: 3}
       propertyPath: m_Color.g
@@ -1183,6 +1198,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1193393793}
     m_Modifications:
+    - target: {fileID: 1537446741982529765, guid: 42d8dda72859618499b9571205c7a06f,
+        type: 3}
+      propertyPath: maxHits
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1537446741982529766, guid: 42d8dda72859618499b9571205c7a06f,
         type: 3}
       propertyPath: m_Color.g
@@ -1412,6 +1432,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1193393793}
     m_Modifications:
+    - target: {fileID: 1537446741982529765, guid: 42d8dda72859618499b9571205c7a06f,
+        type: 3}
+      propertyPath: maxHits
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1537446741982529766, guid: 42d8dda72859618499b9571205c7a06f,
         type: 3}
       propertyPath: m_Color.g
@@ -1987,9 +2012,21 @@ PrefabInstance:
         type: 3}
       propertyPath: scoreText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9111250632995182514}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c9e4afafdc7f9a48a7e9e0325ebee67, type: 3}
+--- !u!114 &9111250632995182514 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3480029155000940034, guid: 8c9e4afafdc7f9a48a7e9e0325ebee67,
+    type: 3}
+  m_PrefabInstance: {fileID: 9111250632995182513}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &9210559346521001861
 PrefabInstance:
   m_ObjectHideFlags: 0

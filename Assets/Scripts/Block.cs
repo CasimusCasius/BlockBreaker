@@ -9,11 +9,11 @@ public class Block : MonoBehaviour
    
     //cashed reference
     Level level;
-    GameStatus gameStatus;
+    GameSession gameStatus;
         private void Start()
     {
         level = FindObjectOfType<Level>();
-        gameStatus = FindObjectOfType<GameStatus>();
+        gameStatus = FindObjectOfType<GameSession>();
         level.CountBreakableBlocks();
     }
     private void OnCollisionEnter2D(Collision2D collision)

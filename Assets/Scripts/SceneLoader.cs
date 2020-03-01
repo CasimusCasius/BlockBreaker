@@ -4,7 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour
 {
- 
+
+    // cashed ref
+
     public void LoadNextScene()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
@@ -15,6 +17,7 @@ public class SceneLoader : MonoBehaviour
         else
         {
             SceneManager.LoadScene(0);
+            FindObjectOfType<GameSession>().ResetGameStatus();
         }
 
 

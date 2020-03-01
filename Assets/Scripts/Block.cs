@@ -16,7 +16,13 @@ public class Block : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        DestroyBlock();
+    }
+
+    private void DestroyBlock()
+    {
         AudioSource.PlayClipAtPoint(destroySFX, Camera.main.transform.position);
+        level.BlockDestroy();
         Destroy(gameObject);
     }
 }

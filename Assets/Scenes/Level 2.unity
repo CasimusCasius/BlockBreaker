@@ -770,7 +770,7 @@ PrefabInstance:
     - target: {fileID: 1537446741982529765, guid: 42d8dda72859618499b9571205c7a06f,
         type: 3}
       propertyPath: maxHits
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1537446741982529767, guid: 42d8dda72859618499b9571205c7a06f,
         type: 3}
@@ -844,7 +844,7 @@ PrefabInstance:
     - target: {fileID: 1537446741982529765, guid: 42d8dda72859618499b9571205c7a06f,
         type: 3}
       propertyPath: maxHits
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1537446741982529767, guid: 42d8dda72859618499b9571205c7a06f,
         type: 3}
@@ -987,7 +987,7 @@ PrefabInstance:
     - target: {fileID: 1537446741982529765, guid: 42d8dda72859618499b9571205c7a06f,
         type: 3}
       propertyPath: maxHits
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1537446741982529767, guid: 42d8dda72859618499b9571205c7a06f,
         type: 3}
@@ -1675,7 +1675,7 @@ PrefabInstance:
     - target: {fileID: 1537446741982529765, guid: 42d8dda72859618499b9571205c7a06f,
         type: 3}
       propertyPath: maxHits
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1537446741982529767, guid: 42d8dda72859618499b9571205c7a06f,
         type: 3}
@@ -1834,7 +1834,7 @@ PrefabInstance:
     - target: {fileID: 1537446741982529765, guid: 42d8dda72859618499b9571205c7a06f,
         type: 3}
       propertyPath: maxHits
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1537446741982529767, guid: 42d8dda72859618499b9571205c7a06f,
         type: 3}
@@ -1998,7 +1998,7 @@ PrefabInstance:
     - target: {fileID: 1537446741982529765, guid: 42d8dda72859618499b9571205c7a06f,
         type: 3}
       propertyPath: maxHits
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1537446741982529767, guid: 42d8dda72859618499b9571205c7a06f,
         type: 3}
@@ -2072,7 +2072,7 @@ PrefabInstance:
     - target: {fileID: 1537446741982529765, guid: 42d8dda72859618499b9571205c7a06f,
         type: 3}
       propertyPath: maxHits
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1537446741982529767, guid: 42d8dda72859618499b9571205c7a06f,
         type: 3}
